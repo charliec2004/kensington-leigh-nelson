@@ -51,9 +51,9 @@ export default function Home() {
             Kensington Leigh Nelson
           </h1>
           <p className="hero-lede">
-            Chapman University business graduate using macro and microeconomics
-            to build a holistic view of finance while gaining client-facing
-            wealth management experience at IEQ Capital.
+            Chapman University business graduate with a finance-focused
+            economics minor, currently working as a wealth management intern at
+            IEQ Capital in San Francisco.
           </p>
           <div className="hero-actions" aria-label="Portfolio sections">
             <a className="button button-primary" href="#contact">
