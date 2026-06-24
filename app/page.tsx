@@ -46,7 +46,9 @@ export default function Home() {
       <section className="hero section-reveal" id="top" aria-labelledby="hero-title">
         <div className="hero-copy">
           <p className="eyebrow">Finance and wealth management</p>
-          <h1 id="hero-title">Kensington Leigh Nelson</h1>
+          <h1 className="hero-title" id="hero-title">
+            Kensington Leigh Nelson
+          </h1>
           <p className="hero-lede">
             Chapman University business graduate with a finance-focused
             economics minor, currently working as a wealth management intern at
