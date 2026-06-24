@@ -3,13 +3,43 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const siteUrl = "https://charliec2004.github.io/kensington-leigh-nelson";
+const title = "Kensington Leigh Nelson";
+const description =
+  "Portfolio for Kensington Leigh Nelson, a Chapman University business graduate and wealth management intern at IEQ Capital.";
+const ogImageUrl = `${siteUrl}/og-image.jpg`;
 
 export const metadata: Metadata = {
-  title: "Kensington Leigh Nelson",
-  description:
-    "Portfolio for Kensington Leigh Nelson, a Chapman University business graduate and wealth management intern at IEQ Capital.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  alternates: {
+    canonical: siteUrl,
+  },
   icons: {
     icon: `${basePath}/favicon.svg`,
+  },
+  openGraph: {
+    title,
+    description,
+    url: siteUrl,
+    siteName: title,
+    type: "website",
+    images: [
+      {
+        url: ogImageUrl,
+        width: 1200,
+        height: 630,
+        alt: "Kensington Leigh Nelson portfolio preview",
+        type: "image/jpeg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: [ogImageUrl],
   },
 };
 

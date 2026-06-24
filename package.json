@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "lint": "eslint .",
+    "generate:og": "node scripts/generate-og-image.mjs",
     "prepare:portrait": "node scripts/prepare-portrait.mjs"
   },
   "dependencies": {
