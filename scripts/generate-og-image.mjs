@@ -31,12 +31,11 @@ const svg = `
   <rect x="704" y="102" width="398" height="454" fill="#fffdf8" stroke="#c7c0b3" stroke-width="1.4"/>
   <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
     <text x="76" y="136" fill="#496558" font-size="22" font-weight="750" letter-spacing="5">${escapeXml("FINANCE AND WEALTH MANAGEMENT")}</text>
-    <text x="76" y="488" fill="#69716d" font-size="28" font-weight="500">${escapeXml("Chapman University graduate · IEQ Capital")}</text>
+    <text x="76" y="512" fill="#69716d" font-size="28" font-weight="500">${escapeXml("Chapman University graduate · IEQ Capital")}</text>
   </g>
   <g font-family="Iowan Old Style, Palatino Linotype, Palatino, Georgia, serif" fill="#1f2523">
-    <text x="72" y="268" font-size="104" font-weight="500">Kensington</text>
-    <text x="72" y="374" font-size="104" font-weight="500">Leigh Nelson</text>
-    <text x="76" y="552" font-size="30" font-weight="500">KLN</text>
+    <text x="72" y="282" font-size="104" font-weight="500">Kensington</text>
+    <text x="72" y="388" font-size="104" font-weight="500">Leigh Nelson</text>
   </g>
 </svg>`;
 
