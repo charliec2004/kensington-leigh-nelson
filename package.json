@@ -1,0 +1,26 @@
+{
+  "name": "kesnington-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "eslint .",
+    "prepare:portrait": "node scripts/prepare-portrait.mjs"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "latest",
+    "sharp": "^0.35.2",
+    "typescript": "latest"
+  },
+  "packageManager": "pnpm@9.15.9"
+}
