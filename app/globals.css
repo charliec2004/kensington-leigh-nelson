@@ -577,6 +577,9 @@ h1 {
 }
 
 .focus-panel li {
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  align-items: start;
   padding: 17px 0;
   border-bottom: 1px solid var(--rule);
   color: #3f4743;
@@ -584,8 +587,7 @@ h1 {
 }
 
 .focus-panel li::before {
-  display: inline-block;
-  width: 32px;
+  display: block;
   color: var(--accent);
   content: "-";
 }
@@ -837,6 +839,11 @@ h1 {
 
   .focus-panel {
     padding: 24px 20px;
+  }
+
+  .focus-panel li {
+    grid-template-columns: 24px minmax(0, 1fr);
+    padding: 16px 0;
   }
 
   .footer-tags {

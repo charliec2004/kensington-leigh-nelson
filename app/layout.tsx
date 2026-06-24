@@ -6,7 +6,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const siteUrl = "https://charliec2004.github.io/kensington-leigh-nelson";
 const title = "Kensington Leigh Nelson";
 const description =
-  "Portfolio for Kensington Leigh Nelson, a Chapman University business graduate interested in technical finance, economic context, and client-facing wealth management.";
+  "Portfolio for Kensington Leigh Nelson, a Chapman University business graduate interested in investment research, economic context, and client-facing wealth management.";
 const ogImageUrl = `${siteUrl}/og-image.jpg`;
 
 export const metadata: Metadata = {

@@ -24,10 +24,10 @@ const profileHighlights = [
 ];
 
 const focusAreas = [
-  "Macro and microeconomic context",
-  "Stock research and business fundamentals",
+  "Economic and market context",
+  "Company fundamentals and stock research",
   "Client-facing wealth management",
-  "Advisory culture and service standards",
+  "Advisory culture and service",
 ];
 
 export default function Home() {
@@ -111,23 +111,22 @@ export default function Home() {
         <div className="section-body">
           <p>
             Kensington is a Chapman University business graduate with an
-            economics minor and an interest in both the technical and
-            client-facing sides of finance. She uses macro and microeconomic
-            context to understand the larger forces around markets and the
-            company-level details that shape individual investment decisions.
+            economics minor and an interest in both the analytical and
+            client-facing sides of finance. She is drawn to the way broad
+            economic trends, industry dynamics, and company fundamentals come
+            together when evaluating an investment.
           </p>
           <p>
-            She especially enjoys understanding the essence of a stock: the
-            business behind it, the industry it sits in, the market environment
-            around it, and the fundamentals that explain why it may matter in a
-            portfolio.
+            Her academic background in macro and microeconomics gives her a
+            framework for looking at both the market environment and the
+            business behind a stock: what the company does, how it makes money,
+            and what can affect its outlook.
           </p>
           <p>
-            Through her internship at IEQ Capital in San Francisco, she is also
-            gaining client-facing experience inside private wealth. That work
-            has deepened her interest in the advisory culture of finance: clear
-            communication, careful preparation, and the service standards that
-            support long-term client relationships.
+            Through her internship at IEQ Capital in San Francisco, she is
+            gaining client-facing experience inside private wealth. She enjoys
+            the culture of advisory work: preparation, clear communication, and
+            helping clients feel grounded in financial decisions.
           </p>
         </div>
       </section>
@@ -145,8 +144,7 @@ export default function Home() {
               <h3>Business major</h3>
               <p>
                 Undergraduate business training supported by an economics minor
-                that connects macroeconomic forces, microeconomic behavior, and
-                finance.
+                that connects market conditions, company behavior, and finance.
               </p>
             </div>
           </article>
@@ -156,7 +154,7 @@ export default function Home() {
               <h3>Wealth Management Intern</h3>
               <p>
                 Current client-facing experience inside a private wealth firm,
-                supporting Kensington&apos;s interest in technical finance,
+                supporting Kensington&apos;s interest in investment research,
                 advisory culture, and client service.
               </p>
             </div>
@@ -167,13 +165,13 @@ export default function Home() {
       <section className="focus section-reveal" id="focus">
         <div className="section-heading">
           <p className="eyebrow">Career focus</p>
-          <h2>Interested in the full picture behind good advice.</h2>
+          <h2>Where research and client work meet.</h2>
         </div>
         <div className="focus-panel">
           <p>
-            Kensington is focused on the work behind good advice: understanding
-            the company behind a stock, reading the economic context around it,
-            and communicating clearly with clients.
+            Her focus is the overlap between research and service: learning
+            what drives a company, understanding the economic backdrop, and
+            turning that work into clear conversations with clients.
           </p>
           <ul aria-label="Focus areas">
             {focusAreas.map((area) => (
