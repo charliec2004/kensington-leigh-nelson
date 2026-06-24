@@ -2,12 +2,14 @@ import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   title: "Kensington Leigh Nelson",
   description:
     "Portfolio for Kensington Leigh Nelson, a Chapman University business graduate and wealth management intern at IEQ Capital.",
   icons: {
-    icon: "/favicon.svg",
+    icon: `${basePath}/favicon.svg`,
   },
 };
 

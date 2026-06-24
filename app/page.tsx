@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { ContactCopy } from "./contact-copy";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const profileHighlights = [
   {
     label: "Education",
@@ -17,7 +19,7 @@ const profileHighlights = [
     label: "Current experience",
     value: "IEQ Capital",
     detail: "Wealth Management Intern in San Francisco",
-    logo: "/ieq-logo-blue.webp",
+    logo: `${basePath}/ieq-logo-blue.webp`,
   },
 ];
 
@@ -66,7 +68,7 @@ export default function Home() {
           <div className="portrait-frame">
             <Image
               className="portrait-image"
-              src="/kensington-portrait-clean.webp"
+              src={`${basePath}/kensington-portrait-clean.webp`}
               alt="Kensington Leigh Nelson"
               width={900}
               height={1132}
