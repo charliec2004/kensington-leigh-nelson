@@ -12,21 +12,22 @@ const profileHighlights = [
   },
   {
     label: "Academic focus",
-    value: "Finance",
-    detail: "Wealth Management",
+    value: "Economics and finance",
+    detail: "Macro, micro, and markets",
   },
   {
     label: "Current experience",
     value: "IEQ Capital",
-    detail: "Wealth Management Intern in San Francisco",
+    detail: "Client-facing wealth management intern",
     logo: `${basePath}/ieq-logo-blue.webp`,
   },
 ];
 
 const focusAreas = [
-  "Client-centered wealth advisory",
-  "Finance and market context",
-  "Professional service standards",
+  "Macro and microeconomic context",
+  "Stock research and business fundamentals",
+  "Client-facing wealth management",
+  "Advisory culture and service standards",
 ];
 
 export default function Home() {
@@ -50,9 +51,9 @@ export default function Home() {
             Kensington Leigh Nelson
           </h1>
           <p className="hero-lede">
-            Chapman University business graduate with a finance-focused
-            economics minor, currently working as a wealth management intern at
-            IEQ Capital in SF.
+            Chapman University business graduate using macro and microeconomics
+            to build a holistic view of finance while gaining client-facing
+            wealth management experience at IEQ Capital.
           </p>
           <div className="hero-actions" aria-label="Portfolio sections">
             <a className="button button-primary" href="#contact">
@@ -105,26 +106,28 @@ export default function Home() {
       <section className="profile-grid section-reveal" id="profile">
         <div className="section-heading">
           <p className="eyebrow">Profile</p>
-          <h2>Prepared for the next step in private wealth.</h2>
+          <h2>Building a complete view of finance.</h2>
         </div>
         <div className="section-body">
           <p>
             Kensington is a Chapman University business graduate with an
-            economics minor and a strong interest in the relationship side of
-            finance. She is drawn to work that requires clear thinking, careful
-            preparation, and the ability to communicate well with people making
-            important financial decisions.
+            economics minor and an interest in both the technical and
+            client-facing sides of finance. She uses macro and microeconomic
+            context to understand the larger forces around markets and the
+            company-level details that shape individual investment decisions.
           </p>
           <p>
-            Through her internship at IEQ Capital in San Francisco, she is
-            learning how private wealth teams support clients day to day, from
-            preparing for meetings to understanding the details that shape a
-            family&apos;s broader financial picture.
+            She especially enjoys understanding the essence of a stock: the
+            business behind it, the industry it sits in, the market environment
+            around it, and the fundamentals that explain why it may matter in a
+            portfolio.
           </p>
           <p>
-            Her early professional focus is wealth management: thoughtful
-            service, sound judgment, and the kind of consistency that helps
-            long-term advisory relationships work well.
+            Through her internship at IEQ Capital in San Francisco, she is also
+            gaining client-facing experience inside private wealth. That work
+            has deepened her interest in the advisory culture of finance: clear
+            communication, careful preparation, and the service standards that
+            support long-term client relationships.
           </p>
         </div>
       </section>
@@ -142,7 +145,8 @@ export default function Home() {
               <h3>Business major</h3>
               <p>
                 Undergraduate business training supported by an economics minor
-                with an emphasis in finance.
+                that connects macroeconomic forces, microeconomic behavior, and
+                finance.
               </p>
             </div>
           </article>
@@ -151,8 +155,9 @@ export default function Home() {
             <div className="timeline-content">
               <h3>Wealth Management Intern</h3>
               <p>
-                Current experience inside a private wealth firm, supporting
-                Kensington&apos;s interest in client advisory work.
+                Current client-facing experience inside a private wealth firm,
+                supporting Kensington&apos;s interest in technical finance,
+                advisory culture, and client service.
               </p>
             </div>
           </article>
@@ -162,13 +167,13 @@ export default function Home() {
       <section className="focus section-reveal" id="focus">
         <div className="section-heading">
           <p className="eyebrow">Career focus</p>
-          <h2>Interested in wealth management.</h2>
+          <h2>Interested in the full picture behind good advice.</h2>
         </div>
         <div className="focus-panel">
           <p>
-            Kensington is focused on the work behind good advice: listening
-            carefully, understanding client priorities, and making financial
-            decisions feel clearer.
+            Kensington is focused on the work behind good advice: understanding
+            the company behind a stock, reading the economic context around it,
+            and communicating clearly with clients.
           </p>
           <ul aria-label="Focus areas">
             {focusAreas.map((area) => (
@@ -181,7 +186,7 @@ export default function Home() {
       <section className="contact section-reveal" id="contact">
         <div className="section-heading">
           <p className="eyebrow">Contact</p>
-          <h2>Open to wealth management opportunities.</h2>
+          <h2>Open to finance and wealth management opportunities.</h2>
         </div>
         <ContactCopy />
       </section>
@@ -191,7 +196,7 @@ export default function Home() {
         <div className="footer-tags" aria-label="Portfolio summary">
           <span>Chapman University graduate</span>
           <span>Business</span>
-          <span>Finance emphasis</span>
+          <span>Economics and finance</span>
         </div>
       </footer>
     </main>
