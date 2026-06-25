@@ -554,6 +554,21 @@ h1 {
   transform: rotate(42deg) translateY(-1px);
 }
 
+.toast-error {
+  background: #6f332c;
+}
+
+.toast-error::before {
+  width: 14px;
+  height: 14px;
+  border-right: 0;
+  border-bottom: 0;
+  background:
+    linear-gradient(currentColor, currentColor) center / 2px 14px no-repeat,
+    linear-gradient(currentColor, currentColor) center / 14px 2px no-repeat;
+  transform: rotate(45deg);
+}
+
 .toast-visible {
   opacity: 1;
   transform: translate(-50%, 0);
