@@ -3,7 +3,10 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-const siteUrl = "https://charliec2004.github.io/kensington-leigh-nelson";
+const isProjectPagesBuild = basePath === "/kensington-leigh-nelson";
+const siteUrl = isProjectPagesBuild
+  ? `https://charliec2004.github.io${basePath}`
+  : "https://kensingtonnelson.com";
 const title = "Kensington Leigh Nelson";
 const description =
   "Portfolio for Kensington Leigh Nelson, a Chapman University business graduate interested in investment research, economic context, and client-facing wealth management.";
