@@ -5,23 +5,25 @@ import { useEffect, useState } from "react";
 const CONTACT_EMAIL = "kensingtonnelson9@gmail.com";
 
 export function ContactCopy() {
-  const [toast, setToast] = useState<"idle" | "copied" | "error">("idle");
+  const [copyState, setCopyState] = useState<"idle" | "copied" | "error">(
+    "idle",
+  );
 
   useEffect(() => {
-    if (toast === "idle") {
+    if (copyState === "idle") {
       return;
     }
 
-    const timeout = window.setTimeout(() => setToast("idle"), 2600);
+    const timeout = window.setTimeout(() => setCopyState("idle"), 1800);
     return () => window.clearTimeout(timeout);
-  }, [toast]);
+  }, [copyState]);
 
   async function copyEmail() {
     try {
       await writeToClipboard(CONTACT_EMAIL);
-      setToast("copied");
+      setCopyState("copied");
     } catch {
-      setToast("error");
+      setCopyState("error");
     }
   }
 
@@ -32,16 +34,45 @@ export function ContactCopy() {
         directly.
       </p>
       <button className="email-copy" type="button" onClick={copyEmail}>
-        <span className="email-copy-label">Copy email</span>
-        <span className="email-copy-address">{CONTACT_EMAIL}</span>
+        <span className="email-copy-sizer" aria-hidden="true">
+          {CONTACT_EMAIL}
+        </span>
+        <span
+          className={`email-copy-state email-copy-state-idle ${
+            copyState === "idle" ? "email-copy-state-active" : ""
+          }`}
+          aria-hidden={copyState !== "idle"}
+        >
+          <span className="email-copy-text">{CONTACT_EMAIL}</span>
+          <span className="email-copy-icon" aria-hidden="true">
+            <span className="email-copy-icon-back" />
+            <span className="email-copy-icon-front" />
+          </span>
+        </span>
+        <span
+          className={`email-copy-state email-copy-state-feedback ${
+            copyState === "copied" ? "email-copy-state-active" : ""
+          }`}
+          aria-hidden={copyState !== "copied"}
+        >
+          Email copied
+        </span>
+        <span
+          className={`email-copy-state email-copy-state-feedback ${
+            copyState === "error" ? "email-copy-state-active" : ""
+          }`}
+          aria-hidden={copyState !== "error"}
+        >
+          Copy failed
+        </span>
       </button>
-      <div
-        className={`toast toast-${toast} ${toast !== "idle" ? "toast-visible" : ""}`}
-        role="status"
-        aria-live="polite"
-      >
-        {toast === "error" ? "Copy failed" : "Email copied"}
-      </div>
+      <span className="sr-only" role="status" aria-live="polite">
+        {copyState === "copied"
+          ? "Email copied"
+          : copyState === "error"
+            ? "Copy failed"
+            : ""}
+      </span>
     </div>
   );
 }
