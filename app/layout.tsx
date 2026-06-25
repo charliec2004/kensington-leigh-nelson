@@ -20,7 +20,11 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   icons: {
-    icon: `${basePath}/favicon.svg`,
+    icon: [
+      { url: `${basePath}/favicon-32x32.png`, sizes: "32x32", type: "image/png" },
+      { url: `${basePath}/favicon.svg`, type: "image/svg+xml" },
+    ],
+    apple: `${basePath}/apple-touch-icon.png`,
   },
   openGraph: {
     title,
